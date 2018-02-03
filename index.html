@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <title>miziel's Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Lab: Pixel Art Maker</h1>
-
     <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
+	<form id="sizePicker">
         Grid Height:
-        <input type="number" id="input_height" name="height" min="1" value="1">
+        <input type="number" id="input_height" name="height" min="1" max="100" value="10">
         Grid Width:
-        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="number" id="input_width" name="width" min="1" max="40" value="10">
         <input type="submit">
     </form>
-
     <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
-
+	<input type="color" id="colorPicker">
     <h2>Design Canvas</h2>
-    <table id="pixel_canvas"></table>
-
+    <div id="pixel_canvas"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="designs.js"></script>
+	
 </body>
 </html>
