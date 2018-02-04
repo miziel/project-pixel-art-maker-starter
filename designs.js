@@ -14,6 +14,7 @@ $(function(){
 	$(".pixel").on("dblclick", function(event) {              // erase color from pixel on double mouse click
 	    $(event.target).css("backgroundColor", "rgba(0, 0, 0, 0)");
 	});
+	$(".pixel").contextmenu(function(){                 // disable context menu
 		return false;
 	});                          
     });
