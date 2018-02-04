@@ -1,9 +1,5 @@
 $(function(){
 	
-    $(".pixel").contextmenu(function() {                          // disable context menu
-        return false;
-    });
-	
     $(":submit").on("click", function(event){   
 	event.preventDefault();                                   // prevent submit default behavior
         var rows, cols;
@@ -18,6 +14,8 @@ $(function(){
 	$(".pixel").on("dblclick", function(event) {              // erase color from pixel on double mouse click
 	    $(event.target).css("backgroundColor", "rgba(0, 0, 0, 0)");
 	});
+		return false;
+	});                          
     });
 
     function makeGrid(rows, cols){
@@ -33,3 +31,4 @@ $(function(){
 });	
 	
 
+    
