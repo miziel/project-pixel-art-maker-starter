@@ -2,13 +2,13 @@ $(function(){
 	
     $(":submit").on("click", function(event){   
 	event.preventDefault();                                   // prevent submit default behavior
-        var rows, cols;
+        let rows, cols;
 	rows = $("#input_height").val();                          // get grid size
 	cols = $("#input_width").val();
         makeGrid(rows, cols);                                     // call the makeGrid
 	
 	$(".pixel").on("click", function(event) {                 // put color on pixel with mouse click
-	    var color = $("#colorPicker").val();
+	    let color = $("#colorPicker").val();
             $(event.target).css("backgroundColor", color);
         });
 	$(".pixel").on("dblclick", function(event) {              // erase color from pixel on double mouse click
